@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirect Notice</title>
+    <meta http-equiv="refresh" content="5;url=https://yt.savetube.me/" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f8f9fa;
+      }
+
+      .header {
+        background-color: #2c3e50;
+        color: white;
+        padding: 15px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .header-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 22px;
+        font-weight: bold;
+      }
+
+      .main-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+
+      .alert-card {
+        background-color: white;
+        border-radius: 6px;
+        padding: 25px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        border-left: 5px solid #e74c3c;
+      }
+
+      .alert-title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        color: #e74c3c;
+      }
+
+      .message {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+
+      .redirect {
+        color: #666;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .redirect:before {
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border: 2px solid #666;
+        border-radius: 50%;
+        border-top-color: transparent;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      a {
+        color: #3498db;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 768px) {
+        .header-content {
+          padding: 0 15px;
+        }
+
+        .main-content {
+          padding: 25px 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <div class="logo">SaveTube</div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="alert-card">
+        <div class="alert-title">Download Link Expired!</div>
+        <div class="message">
+          The download link has expired or is invalid. You will be redirected to
+          SaveTube.
+        </div>
+        <div class="redirect">
+          Redirecting in 5 seconds...
+          <a href="https://yt.savetube.me/">Go now</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
